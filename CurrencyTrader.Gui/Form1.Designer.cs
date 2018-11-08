@@ -113,6 +113,7 @@
             this.lbTradeLines.Name = "lbTradeLines";
             this.lbTradeLines.Size = new System.Drawing.Size(187, 251);
             this.lbTradeLines.TabIndex = 7;
+            this.lbTradeLines.SelectedIndexChanged += new System.EventHandler(this.lbTradeLines_SelectedIndexChanged);
             // 
             // label3
             // 

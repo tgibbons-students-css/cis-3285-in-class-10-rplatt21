@@ -31,8 +31,12 @@ namespace CurrencyTrader.Gui
             var logger = new ConsoleLogger();
             //var logger = new GuiLogger(lbStatus.Items);
 
+            // var tradeDataProvider = new StreamTradeDataProvider(tradeStream);
+            // var tradeDataProvider = new AdjustTradeDataProvider(tradeURl)
+
             //var tradeDataProvider = new StreamTradeDataProvider(tradeStream);
-            var tradeDataProvider = new UrlTradeDataProvider(tradeUrl);
+            //var tradeDataProvider = new UrlTradeDataProvider(tradeUrl);
+            var tradeDataProvider = new AdjustTradeDataProvider(tradeUrl);
 
             var tradeValidator = new SimpleTradeValidator(logger);
             var tradeMapper = new SimpleTradeMapper();
@@ -65,6 +69,11 @@ namespace CurrencyTrader.Gui
         }
 
         private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lbTradeLines_SelectedIndexChanged(object sender, EventArgs e)
         {
 
         }
